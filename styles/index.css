@@ -1,0 +1,10 @@
+/* * {
+    font-family: avenir, helvetica, sans-serif;
+} */
+button:hover{
+    cursor: pointer;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+}
