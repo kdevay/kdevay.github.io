@@ -4,7 +4,7 @@
 button:hover{
     cursor: pointer;
 }
-body{
+.app{
     position: relative;
     min-height: 100vh;
     min-width: 100vw;
