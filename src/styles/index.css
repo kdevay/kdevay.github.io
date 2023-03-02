@@ -13,15 +13,12 @@ button:hover{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 5fr 1fr;
 }
-#top{
-    background-color: rgb(240, 211, 137);
+#header{
     padding: 0 10%;
 }
 #mid{
-    background-color: rgb(192, 182, 182);
     padding: 0 10%;
 }
-#foot{
-    background-color: pink;
+#footer{
     padding: 0 10%;
 }
