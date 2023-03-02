@@ -4,6 +4,7 @@ import {ThemeProvider} from "styled-components";
 import { GlobalStyles } from "./components/Globalstyle";
 import { lightTheme, darkTheme } from "./components/Themes"
 import Header from './components/Header';
+import HeaderL from './components/HeaderL';
 import Footer from './components/Footer';
 import Mid from './components/Mid';
 
@@ -16,12 +17,18 @@ export default function App() {
   }
 
   return (
-    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+    <ThemeProvider theme={mode === 'light' ? lightTheme : darkTheme}>
       <>
       <GlobalStyles/>
       <div className="App">
-        <div></div>
-        <Header mode={mode}></Header>
+        <div id='switch'>
+          <button ></button>
+          <label className="switch">
+            <input onClick={toggleMode} type="checkbox"></input>
+            <span className="slider"></span>
+          </label>
+        </div>
+        {mode === 'dark' ? <Header></Header> : <HeaderL></HeaderL>}
         <Mid></Mid>
         <Footer></Footer>
       </div>
