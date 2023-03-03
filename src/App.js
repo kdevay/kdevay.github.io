@@ -1,10 +1,10 @@
-import './App.css';
 import React, { useState, useEffect } from "react";
 import {ThemeProvider} from "styled-components";
-import { GlobalStyles } from "./components/Globalstyle";
+import { GlobalStyles } from "./components/GlobalStyles";
 import { lightTheme, darkTheme } from "./components/Themes"
 import Header from './components/Header';
-import HeaderL from './components/HeaderL';
+import DarkIcons from './components/DarkIcons';
+import LightIcons from './components/LightIcons';
 import Footer from './components/Footer';
 import Mid from './components/Mid';
 
@@ -20,17 +20,18 @@ export default function App() {
     <ThemeProvider theme={mode === 'light' ? lightTheme : darkTheme}>
       <>
       <GlobalStyles/>
-      <div className="App">
-        <div id='switch'>
-          <button ></button>
-          <label className="switch">
-            <input onClick={toggleMode} type="checkbox"></input>
-            <span className="slider"></span>
-          </label>
+      <div id="App">
+          <div id='switchDiv'>
+            <label className="switch">
+              <input onClick={toggleMode} type="checkbox"></input>
+              <span className="slider"></span>
+            </label>
+          </div>
+        <div id='main'>
+          <Header></Header>
+          <Mid></Mid>
+          {mode === 'dark' ? <DarkIcons></DarkIcons> : <LightIcons></LightIcons>}
         </div>
-        {mode === 'dark' ? <Header></Header> : <HeaderL></HeaderL>}
-        <Mid></Mid>
-        <Footer></Footer>
       </div>
       </>
     </ThemeProvider>
