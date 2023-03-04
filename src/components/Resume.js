@@ -10,7 +10,7 @@ export default function Resume() {
             </div>
             <div>
                 <h2 className='resSubDiv'>SKILLS</h2>
-                <h3 className='resBody'>Functional Programming &nbsp;•&nbsp; Object-oriented programming &nbsp;•&nbsp; abstraction &nbsp;•&nbsp; algorithms &nbsp;•&nbsp; data structures &nbsp;•&nbsp; resource management &nbsp;•&nbsp; software engineering</h3>
+                <h3 className='resBody'>functional programming &nbsp;•&nbsp; object-oriented programming &nbsp;•&nbsp; algorithms &nbsp;•&nbsp; data structures &nbsp;•&nbsp; software engineering</h3>
             </div>
 
             <div>

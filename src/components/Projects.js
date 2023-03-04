@@ -5,11 +5,18 @@ import Weather from "../projects/weather.png";
 import Dash from "../projects/dash.png";
 import SignUp from "../projects/signUp.png";
 
-export default function Projects() {
+export default function Projects(props) {
+    const {mode} = props;
+    const [tileClass, setTileClass] = useState(mode === 'dark' ? 'darkTile' : 'tile');
+
+    useEffect(() => {
+        setTileClass(mode === 'dark' ? 'darkTile' : 'tile');
+    }, [mode]); 
+
     return (
         <div id="workDiv">
             <div className='row'>
-                    <div className='tile'>
+                    <div className={tileClass}>
                         <a target="_blank" href='https://kdevay.github.io/Etch-a-Sketch/'>
                             <img className='page' src={Sketch} alt='Screenshot of an etch-a-sketch emulator webpage'></img>
                         </a>
@@ -23,32 +30,32 @@ export default function Projects() {
                     </div>
             </div>
             <div className='row'>
-                    <div className='tile'>
+                    <div className={tileClass}>
                         <a target="_blank" href='https://kdevay.github.io/odin-shopping-cart/'>
                             <img className='page' src={Froot} alt='Screenshot of a shopping webpage'></img>
                         </a>
                     </div>
                     <div className='description'>
                         <h2 className='resSubDiv'>Froot Store</h2>
-                        <h3 className='ProjBody'>The Froot Store utilizes React's client-side routing to emulate a responsive online retail environment.</h3>
+                        <h3 className='ProjBody'>The Froot Store was built using React and React Router to emulate a responsive online retail environment with client-side routing.</h3>
                         <h3 className='ProjBody'>This app's development was fully test-driven with the aid of Jest and the React testing library.</h3>
                     </div>
             </div>
             <div className='row'>
-                    <div className='tile'>
+                    <div className={tileClass}>
                         <a target="_blank" href='https://kdevay.github.io/odin-weather/'>
                             <img className='page' src={Weather} alt='Screenshot of a weather webpage'></img>
                         </a>
                     </div>
                     <div className='description'>
                         <h2 className='resSubDiv'>Weather</h2>
-                        <h3 className='ProjBody'>This project allows users to search for a specific location to get the local weather conditions, by querying OpenWeather's geocoding and weather API.</h3>
-                        <h3 className='ProjBody'>The page styling changes to reflect the weather, and whether it is day or night.</h3>
+                        <h3 className='ProjBody'>This project allows users to view local weather conditions of a specific location, by querying OpenWeather's geocoding and weather APIs.</h3>
                         <h3 className='ProjBody'>A "loading" component displays from the moment the form is submitted until the requested information comes back from the API.</h3>
+                        <h3 className='ProjBody'>The page styling changes to reflect the weather and time of day.</h3>
                     </div>
             </div>
             <div className='row'>
-                    <div className='tile'>
+                    <div className={tileClass}>
                         <a target="_blank" href='https://kdevay.github.io/sign-up/'>
                             <img className='page' src={SignUp} alt='Screenshot of a weather webpage'></img>
                         </a>
@@ -60,7 +67,7 @@ export default function Projects() {
                     </div>
             </div>
             <div className='row'>
-                    <div className='tile'>
+                    <div className={tileClass}>
                         <a target="_blank" href='https://kdevay.github.io/dash-odin/'>
                             <img className='page' src={Dash} alt='Screenshot of a weather webpage'></img>
                         </a>
@@ -68,7 +75,7 @@ export default function Projects() {
                     <div className='description'>
                         <h2 className='resSubDiv'>Dashboard</h2>
                         <h3 className='ProjBody'>This project is purely design driven, with a particular focus on CSS grid and flexbox.</h3>
-                        <h3 className='ProjBody'>The page is Twin Peaks themed, and in service of that, I created several custom icons which echo some of the symbols referenced in the show.</h3>
+                        <h3 className='ProjBody'>The content is an homage to Twin Peaks, and in service of that, I created several custom icons referencing symbols from the show.</h3>
                     </div>
             </div>
                 
