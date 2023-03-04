@@ -13,8 +13,9 @@ export default function App() {
   const [mode, setMode] = useState('dark');
   const [tab, setTab] = useState('resume');
 
-  const changeTab = (e) => {
-    e.target.id === 'work' ? setTab('work') : setTab('resume');
+  const changeTab = (id) => {
+    console.log('id', id)
+    id === 'projects' ? setTab('projects') : setTab('resume');
   }
 
   const toggleMode = () => {

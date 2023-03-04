@@ -6,7 +6,7 @@ import mail from '../icons/mail.png';
 
 export default function HeaderL() {
     return (
-        <div class='links'>
+        <div id='footer'>
             <a target="_blank" href='github'><img className='icon' src={lin} alt='github logo'></img></a>
             <a target="_blank" href='linkedin'><img className='icon' src={octocat} alt='linkedin logo'></img></a>
             <a target="_blank" href='mailto:katdevay@gmail.com'><img className='icon' src={mail} alt='email icon'></img></a>

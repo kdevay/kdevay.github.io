@@ -1,6 +1,20 @@
+/* global styles */
 h1{
     margin: 0px;
     font-size: 38px;
+}
+h2, h3, h4, p{
+    margin:0px;
+}
+ul{
+    padding: 0px;
+    margin: 0px 0px 0px 22px;
+}
+span{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 15px;
 }
 button:hover{
     cursor: pointer;
@@ -15,15 +29,43 @@ button:hover{
     margin: 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 4.5fr 70px;
     align-items: start;
     justify-items: center;
 }
-#mid{
-    padding: 0 10%;
+
+
+/* toggle switch (adapted from W3schools) */
+#switchDiv{
+    float: right;
+    margin: 10px 10px 0 0;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 28px;
+}
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 34px;
+    background-color:  #bfbcbc;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
-/* header contents */
+
+/* header */
 #header{
     display: flex;
     flex-direction: column;
@@ -35,11 +77,6 @@ button:hover{
     justify-content: center;
     align-items: flex-end;
 }
-#tabs{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
 .name{
     margin: 0px;
     font-family: 'Gloock';
@@ -48,6 +85,19 @@ button:hover{
     font-size: 45px;
     font-family: 'Gloock';
     margin: 0px -9px 0px 0px;
+}
+#title{
+    font-family: 'Outfit';
+    font-size: 18px;
+    margin: -4px 0px 22px 0px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+/* header buttons */
+#tabs{
+    width: 224.62px;
+    display: flex;
+    justify-content: space-between;
 }
 #projects{
     font-family: 'Outfit';
@@ -77,41 +127,56 @@ button:hover{
 }
 .Lselected{
     color: #547ca6;
-    /* color: #464a4d; */
     font-weight: 200;
 }
-.unSelected{
+.DunSelected,
+.LunSelected{
     color: inherit;
 }
 
-/* toggle switch */
-#switchDiv{
-    float: right;
-    margin: 10px 10px 0 0;
+
+/* Middle pane */
+#resumeDiv{
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 46px;
-    height: 28px;
+.resSubDiv{
+    font-family: 'Gloock';
+    letter-spacing: 4px;
 }
-.switch input { 
-    opacity: 0;
-    width: 0;
-    height: 0;
+.resBody{
+    font-family: 'Outfit';
+    font-weight: 300;
 }
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 34px;
-    background-color:  #bfbcbc;
-    -webkit-transition: .4s;
-    transition: .4s;
+
+
+#workDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
+.tile{
+    width: 200px;
+    height: 113px;
+}
+
+/* icons */
+.icon{
+    width: 50px;
+    height: 50px;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+
+/* transitions */
 .slider:before {
     position: absolute;
     content: "";
@@ -135,26 +200,3 @@ input:checked + .slider:before {
     -ms-transform: translateX(17px);
     transform: translateX(17px);
 }
-
-/* Middle pane */
-#workDiv{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-.tile{
-    width: 200px;
-    height: 113px;
-}
-
-/* icons */
-.icon{
-    width: 50px;
-    height: 50px;
-}
-.links{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
