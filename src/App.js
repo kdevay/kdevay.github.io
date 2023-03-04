@@ -6,7 +6,7 @@ import Header from './components/Header';
 import DarkIcons from './components/DarkIcons';
 import LightIcons from './components/LightIcons';
 import Resume from './components/Resume';
-import Work from './components/Work';
+import Projects from './components/Projects';
 
 
 export default function App() {
@@ -35,7 +35,7 @@ export default function App() {
           </div>
         <div id='main'>
           <Header mode={mode} tab={tab} changeTab={changeTab}></Header>
-          {tab === 'work' ? <Work></Work> : <Resume></Resume>}
+          {tab === 'projects' ? <Projects></Projects> : <Resume></Resume>}
           {mode === 'dark' ? <DarkIcons></DarkIcons> : <LightIcons></LightIcons>}
         </div>
       </div>
