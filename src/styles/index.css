@@ -160,7 +160,8 @@ button:hover{
     font-weight: 300;
 }
 .bold{
-    font-weight:800;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 /* projects */
 #workDiv{
