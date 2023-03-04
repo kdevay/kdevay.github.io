@@ -2,13 +2,13 @@
   "name": "personal-cv",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://kdevay.github.io/personal-cv",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.8"
   },
-  "homepage": "http://kdevay.github.io/personal-cv",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
