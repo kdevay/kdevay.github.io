@@ -5,12 +5,17 @@ import { lightTheme, darkTheme } from "./components/Themes"
 import Header from './components/Header';
 import DarkIcons from './components/DarkIcons';
 import LightIcons from './components/LightIcons';
-import Footer from './components/Footer';
-import Mid from './components/Mid';
+import Resume from './components/Resume';
+import Work from './components/Work';
 
 
 export default function App() {
   const [mode, setMode] = useState('dark');
+  const [tab, setTab] = useState('resume');
+
+  const changeTab = (e) => {
+    e.target.id === 'work' ? setTab('work') : setTab('resume');
+  }
 
   const toggleMode = () => {
     mode === 'light' ? setMode('dark') : setMode('light')
@@ -28,8 +33,8 @@ export default function App() {
             </label>
           </div>
         <div id='main'>
-          <Header></Header>
-          <Mid></Mid>
+          <Header mode={mode} tab={tab} changeTab={changeTab}></Header>
+          {tab === 'work' ? <Work></Work> : <Resume></Resume>}
           {mode === 'dark' ? <DarkIcons></DarkIcons> : <LightIcons></LightIcons>}
         </div>
       </div>

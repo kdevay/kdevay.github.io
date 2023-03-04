@@ -1,3 +1,7 @@
+h1{
+    margin: 0px;
+    font-size: 38px;
+}
 button:hover{
     cursor: pointer;
 }
@@ -15,22 +19,75 @@ button:hover{
     align-items: start;
     justify-items: center;
 }
+#mid{
+    padding: 0 10%;
+}
+
+/* header contents */
 #header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 14px;
 }
-#mid{
-    padding: 0 10%;
+.nameDiv{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
-#footer{
-    padding: 0 10%;
+#tabs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.name{
+    margin: 0px;
+    font-family: 'Gloock';
+}
+.bigV{
+    font-size: 45px;
+    font-family: 'Gloock';
+    margin: 0px -9px 0px 0px;
+}
+#projects{
+    font-family: 'Outfit';
+    font-size: 13px;
+    border: none;
+    width: 84px;
+    height: 35px;
+    letter-spacing: 3px;
+    padding: 0px;
+}
+#resume{
+    font-family: 'Outfit';
+    font-size: 13px;
+    border: none;
+    width: 71px;
+    height: 35px;
+    letter-spacing: 3px;
+    padding: 0px;
+}
+#resume:hover,
+#projects:hover{
+    cursor: pointer;
+}
+.Dselected{
+    color: #73aae2;
+    font-weight: 200;
+}
+.Lselected{
+    color: #547ca6;
+    /* color: #464a4d; */
+    font-weight: 200;
+}
+.unSelected{
+    color: inherit;
 }
 
 /* toggle switch */
 #switchDiv{
     float: right;
-    margin: 10px;
+    margin: 10px 10px 0 0;
 }
 .switch {
     position: relative;
@@ -79,6 +136,17 @@ input:checked + .slider:before {
     transform: translateX(17px);
 }
 
+/* Middle pane */
+#workDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.tile{
+    width: 200px;
+    height: 113px;
+}
+
 /* icons */
 .icon{
     width: 50px;
@@ -87,5 +155,6 @@ input:checked + .slider:before {
 .links{
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 20px;
 }
+
