@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Sketch from "../projects/sketch.png";
 import Froot from "../projects/froot.png";
 import Weather from "../projects/weather.png";
@@ -22,10 +22,10 @@ export default function Projects(props) {
                         </a>
                     </div>
                     <div className='description'>
-                        <h2 className='resSubDiv'>Etch-a-Sketch</h2>
+                        <h2 className='resSubDiv'>Swipe-a-Sketch</h2>
                         <h3 className='ProjBody'>This Etch-a-Sketch emulator allows users to draw images with the swipe of a mouse.</h3>
                         <h3 className='ProjBody'>Each element, aside from the root container, was created solely with javascript.</h3>
-                        <h3 className='ProjBody'>The sketch-area of the emulator is a grid of divs, the dimenstions of which range from 10 x 10 to 100 x 100.</h3>
+                        <h3 className='ProjBody'>The sketch-area is a grid of divs with adjustable dimensions, ranging from 10-by-10 to 100-by-100 divs.</h3>
                         <h3 className='ProjBody'>When the mouse swipes or hovers over a div, its color scheme changes from light to dark blue, mimicking the action of an etched line.</h3>
                     </div>
             </div>

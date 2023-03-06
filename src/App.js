@@ -35,7 +35,7 @@ export default function App() {
           </div>
         <div id='main'>
           <Header mode={mode} tab={tab} changeTab={changeTab}></Header>
-          {tab === 'projects' ? <Projects></Projects> : <Resume></Resume>}
+          {tab === 'projects' ? <Projects mode={mode}></Projects> : <Resume></Resume>}
           {mode === 'dark' ? <DarkIcons></DarkIcons> : <LightIcons></LightIcons>}
         </div>
       </div>
