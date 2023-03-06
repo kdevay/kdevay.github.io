@@ -10,7 +10,8 @@ import Projects from './components/Projects';
 
 
 export default function App() {
-  const [mode, setMode] = useState('dark');
+  const initialPreference = findThemePreference()
+  const [mode, setMode] = useState(initialPreference);
   const [tab, setTab] = useState('resume');
 
   const changeTab = (id) => {
@@ -21,6 +22,11 @@ export default function App() {
   const toggleMode = () => {
     mode === 'light' ? setMode('dark') : setMode('light')
   }
+
+  // useEffect(()=>{
+  //   let setting = mode === 'light' ? 'dark' : 'light';
+  //   localStorage.setItem('storedTheme', setting); // save theme preference 
+  // }, [mode]);
 
   return (
     <ThemeProvider theme={mode === 'light' ? lightTheme : darkTheme}>
@@ -42,4 +48,16 @@ export default function App() {
       </>
     </ThemeProvider>
   );
+}
+
+function findThemePreference(){
+  // check local storage for pref if visited before
+  // const storedTheme = localStorage.getItem('storedTheme');
+  // if (storedTheme){
+  //   console.log(storedTheme);
+  // }
+
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+  return prefersLight ? 'dark' : 'light';
 }
