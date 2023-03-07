@@ -148,12 +148,13 @@ button:hover{
     padding: 0 10vw;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 60px;
+    margin-top: 30px;
 }
 .resSubDiv{
     font-family: 'Gloock';
     letter-spacing: 4px;
-    margin-bottom: 9px;
+    margin-bottom: 12px;
 }
 .resBody{
     font-family: 'Outfit';

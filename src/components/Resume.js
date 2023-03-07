@@ -1,6 +1,10 @@
 import React from "react";
+import Harvard from "../icons/harvard.png"
+import HarvardD from "../icons/harvardD.png"
 
-export default function Resume() {
+export default function Resume(props) {
+    const {mode} = props;
+
     return (
         <div id="resumeDiv">
 
@@ -48,7 +52,12 @@ export default function Resume() {
             </div>
             <div>
                 <h2 className='resSubDiv'>COURSES</h2>
-                    <h3 className='resBody'>CS50 (Harvard)</h3>
+                    <span>
+                        <h3 className='resBody'>CS50x (Harvard)</h3>
+                        <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0">
+                            <img className="icon" src={mode === 'dark' ? HarvardD : Harvard} alt="Logo for Harvard University"></img>
+                        </a>
+                    </span>
                     <h3 className='resBody'>The Odin Project</h3>
             </div>
             <div>

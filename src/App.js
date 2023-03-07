@@ -10,8 +10,7 @@ import Projects from './components/Projects';
 
 
 export default function App() {
-  const initialPreference = findThemePreference()
-  const [mode, setMode] = useState(initialPreference);
+  const [mode, setMode] = useState(findInitialPreference());
   const [tab, setTab] = useState('resume');
 
   const changeTab = (id) => {
@@ -23,10 +22,10 @@ export default function App() {
     mode === 'light' ? setMode('dark') : setMode('light')
   }
 
-  // useEffect(()=>{
-  //   let setting = mode === 'light' ? 'dark' : 'light';
-  //   localStorage.setItem('storedTheme', setting); // save theme preference 
-  // }, [mode]);
+  useEffect(()=>{
+    let setting = mode === 'light' ? 'dark' : 'light';
+    localStorage.setItem('storedTheme', setting); // save theme preference 
+  }, [mode]);
 
   return (
     <ThemeProvider theme={mode === 'light' ? lightTheme : darkTheme}>
@@ -41,7 +40,7 @@ export default function App() {
           </div>
         <div id='main'>
           <Header mode={mode} tab={tab} changeTab={changeTab}></Header>
-          {tab === 'projects' ? <Projects mode={mode}></Projects> : <Resume></Resume>}
+          {tab === 'projects' ? <Projects mode={mode}></Projects> : <Resume mode={mode}></Resume>}
           {mode === 'dark' ? <DarkIcons></DarkIcons> : <LightIcons></LightIcons>}
         </div>
       </div>
@@ -50,14 +49,17 @@ export default function App() {
   );
 }
 
-function findThemePreference(){
+function findInitialPreference(){
   // check local storage for pref if visited before
-  // const storedTheme = localStorage.getItem('storedTheme');
-  // if (storedTheme){
-  //   console.log(storedTheme);
-  // }
-
+  const storedTheme = localStorage.getItem('storedTheme');
+  console.log('storedTheme: ', storedTheme);
+  if (storedTheme){
+    return storedTheme;
+  }
+  
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-  return prefersLight ? 'dark' : 'light';
+  console.log('prefersDark: ', prefersDark);
+  console.log('prefersLight: ', prefersLight);
+  return prefersLight ? 'light' : 'dark';
 }
