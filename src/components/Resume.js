@@ -1,6 +1,8 @@
 import React from "react";
 import Harvard from "../icons/harvard.png"
 import HarvardD from "../icons/harvardD.png"
+import Odin from "../icons/odin.png"
+import OdinD from "../icons/odinD.png"
 
 export default function Resume(props) {
     const {mode} = props;
@@ -53,12 +55,18 @@ export default function Resume(props) {
             <div>
                 <h2 className='resSubDiv'>COURSES</h2>
                     <span>
-                        <h3 className='resBody'>CS50x (Harvard)</h3>
                         <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0">
                             <img className="icon" src={mode === 'dark' ? HarvardD : Harvard} alt="Logo for Harvard University"></img>
                         </a>
+                        <h3 className='resBody'>Harvard CS50x</h3>
                     </span>
-                    <h3 className='resBody'>The Odin Project</h3>
+                    <span>
+                    <a href="https://www.theodinproject.com/about">
+                                <img className="icon" src={mode === 'dark' ? OdinD : Odin} alt="Logo for The Odin Project"></img>
+                            </a>
+                        <h3 className='resBody'>The Odin Project</h3>
+                    </span>
+                    
             </div>
             <div>
                 <h2 className='resSubDiv'>EDUCATION</h2>
