@@ -36,8 +36,8 @@ export default function Header(props) {
             <h2 id='title'>FULL STACK WEB DEVELOPER</h2>
             
             <div id="tabs">
-                <div onClick={change} className={modeP + isSelectedP} id='projects'>PROJECTS</div> 
-                <div onClick={change} className={modeR + isSelectedR} id='resume'>RESUME</div> 
+                <button onClick={change} className={modeP + isSelectedP} id='projects'>PROJECTS</button>
+                <button onClick={change} className={modeR + isSelectedR} id='resume'>RESUME</button>
             </div>
         </div>
         

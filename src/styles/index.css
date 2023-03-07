@@ -23,6 +23,9 @@ span{
     align-items: center;
     gap: 15px;
 }
+.spacey{
+    letter-spacing: 3px;
+}
 /* a:hover, */
 button:hover{
     cursor: pointer;
@@ -117,6 +120,7 @@ button:hover{
     padding: 0px;
 }
 #resume{
+    background-color: none;
     font-family: 'Outfit';
     font-size: 13px;
     border: none;
@@ -163,6 +167,50 @@ button:hover{
 .bold{
     font-weight: 500;
     letter-spacing: 2px;
+}
+.topLine{
+    display: flex;
+    align-items: center;
+}
+.tallLine{
+    font-family: courier;
+    display: block;
+    font-weight: 100;
+    font-size: 18px;
+}
+.job{
+    width: 430px;
+}
+.courseButton,
+.courseButtonD{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+}
+.courseButtonD{
+    color: white;
+    background-color: #4b5d70;
+}
+.courseButton{
+    color: black;
+    background-color: #b6c7da;
+}
+.courseButtonD:hover{
+    box-shadow: 4px 4px 4px 0px black;
+}
+.courseButton:hover{
+    box-shadow: 4px 4px 4px 0px #363537;
+}
+.courseIcon{
+    width: 30px;
+    height: 30px;
+}
+.courseRow{
+    display: flex;
+    gap: 50px;
 }
 /* projects */
 #workDiv{
@@ -243,7 +291,7 @@ button:hover{
     transition: .4s;
 }
 input:checked + .slider {
-    background-color: rgb(54, 53, 55);;
+    background-color: #747276;
 }
 input:focus + .slider {
     box-shadow: 0 0 1px rgb(54, 53, 55);;

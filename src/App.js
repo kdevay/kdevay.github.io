@@ -6,6 +6,7 @@ import Header from './components/Header';
 import DarkIcons from './components/DarkIcons';
 import LightIcons from './components/LightIcons';
 import Resume from './components/Resume';
+import About from './components/About';
 import Projects from './components/Projects';
 
 
