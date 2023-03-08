@@ -9,6 +9,10 @@ h2, h3, h4, p{
 h5{
     margin: 3px 0px;
 }
+hr{
+    margin: 0px;
+    border-style: solid;
+}
 p{
     font-size: 10px;
 }
@@ -110,27 +114,16 @@ button:hover{
     display: flex;
     justify-content: space-between;
 }
-#projects{
+.tab{
     font-family: 'Outfit';
     font-size: 13px;
-    border: none;
     width: 84px;
-    height: 35px;
+    height: 23px;
     letter-spacing: 3px;
     padding: 0px;
+    margin-bottom: 0px;
 }
-#resume{
-    background-color: none;
-    font-family: 'Outfit';
-    font-size: 13px;
-    border: none;
-    width: 71px;
-    height: 35px;
-    letter-spacing: 3px;
-    padding: 0px;
-}
-#resume:hover,
-#projects:hover{
+.tab:hover{
     cursor: pointer;
 }
 .Dselected{
@@ -141,9 +134,16 @@ button:hover{
     color: #547ca6;
     font-weight: 200;
 }
-.DunSelected,
-.LunSelected{
+.D{
+    background-color: #363537;
     color: inherit;
+}
+.L{
+    background-color:#ffffff;
+    color: inherit;
+}
+.rLine{
+    width: 62px;
 }
 
 
@@ -220,7 +220,7 @@ button:hover{
     align-items: start;
     justify-items: center;
     gap: 90px;
-    margin: 30px 0px 65px 0px;
+    margin: 50px 0px 65px 0px;
     align-items: center;
 }
 .row {

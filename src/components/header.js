@@ -3,21 +3,18 @@ import React, { useState, useEffect } from "react";
 export default function Header(props) {
     const {changeTab, tab, mode} = props;
 
-    const [isSelectedP, setIsSelectedP] = useState(tab === 'projects' ? 'selected' : 'unSelected');
-    const [isSelectedR, setIsSelectedR] = useState(tab === 'resume' ? 'selected' : 'unSelected');
+    const [isSelectedP, setIsSelectedP] = useState(tab === 'projects' ? 'selected' : '');
+    const [isSelectedR, setIsSelectedR] = useState(tab === 'resume' ? 'selected' : '');
 
-    const [modeP, setModeP] = useState(mode === 'dark' ? 'D' : 'L');
-    const [modeR, setModeR] = useState(mode === 'dark' ? 'D' : 'L');
-
+    const [modePR, setModePR] = useState(mode === 'dark' ? 'D' : 'L');
 
     useEffect(() => {
-        setIsSelectedP(tab === 'projects' ? 'selected' : 'unSelected');
-        setIsSelectedR(tab === 'resume' ? 'selected' : 'unSelected');
+        setIsSelectedP(tab === 'projects' ? 'selected' : '');
+        setIsSelectedR(tab === 'resume' ? 'selected' : '');
     }, [tab]); 
 
     useEffect(() => {
-        setModeP(mode === 'dark' ? 'D' : 'L');
-        setModeR(mode === 'dark' ? 'D' : 'L');
+        setModePR(mode === 'dark' ? 'D' : 'L');
     }, [mode]); 
 
 
@@ -36,8 +33,14 @@ export default function Header(props) {
             <h2 id='title'>FULL STACK WEB DEVELOPER</h2>
             
             <div id="tabs">
-                <button onClick={change} className={modeP + isSelectedP} id='projects'>PROJECTS</button>
-                <button onClick={change} className={modeR + isSelectedR} id='resume'>RESUME</button>
+                <div>
+                    <div onClick={change} className={'tab' + ' ' + modePR + isSelectedP} id='projects'>PROJECTS</div>
+                    {isSelectedP ? <hr></hr> : null}
+                </div>
+                <div>
+                    <div onClick={change} className={'tab' + ' ' + modePR + isSelectedR} id='resume'>RESUME</div>
+                    {isSelectedR ? <hr className='rLine'></hr> : null}
+                </div>
             </div>
         </div>
         
