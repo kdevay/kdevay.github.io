@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from "react";
-import Sketch from "../projects/sketch.png";
-import Froot from "../projects/froot.png";
-import Weather from "../projects/weather.png";
-import Dash from "../projects/dash.png";
-import SignUp from "../projects/signUp.png";
+import Sketch from "../images/sketch.png";
+import Froot from "../images/froot.png";
+import Weather from "../images/weather.png";
+import Dash from "../images/dash.png";
+import SignUp from "../images/signUp.png";
 
 export default function Projects(props) {
     const {mode} = props;

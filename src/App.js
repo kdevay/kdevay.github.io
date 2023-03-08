@@ -12,11 +12,13 @@ import Projects from './components/Projects';
 
 export default function App() {
   const [mode, setMode] = useState(findInitialPreference());
-  const [tab, setTab] = useState('resume');
+  const [tab, setTab] = useState('about');
 
   const changeTab = (id) => {
     console.log('id', id)
-    id === 'projects' ? setTab('projects') : setTab('resume');
+    if (id === 'about') setTab('about');
+    if (id === 'projects') setTab('projects');
+    if (id === 'resume') setTab('resume');
   }
 
   const toggleMode = () => {
@@ -41,8 +43,10 @@ export default function App() {
           </div>
         <div id='main'>
           <Header mode={mode} tab={tab} changeTab={changeTab}></Header>
-          {tab === 'projects' ? <Projects mode={mode}></Projects> : <Resume mode={mode}></Resume>}
-          {mode === 'dark' ? <DarkIcons></DarkIcons> : <LightIcons></LightIcons>}
+          {  tab === 'about' && <About mode={mode}></About>  }
+          {  tab === 'projects' && <Projects mode={mode}></Projects> }
+          {  tab === 'resume' && <Resume mode={mode}></Resume> }
+          { tab !=='about' ? (mode === 'dark' ? <DarkIcons></DarkIcons> : <LightIcons></LightIcons> ) : null}
         </div>
       </div>
       </>
