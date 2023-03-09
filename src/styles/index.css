@@ -267,19 +267,23 @@ button:hover{
 
 /* about */
 #aboutDiv{
+    width: 80vw;
     display: flex;
-    justify-items: center;
-    gap: 40px;
-    margin: 50px 0px;
+    flex-wrap: wrap;
     align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+    gap: 50px;
 }
 #aboutText{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 30vw;
+    width: 458px;
     font-family: 'Outfit';
     font-weight: 300;
+    margin-bottom: 50px;
 }
 .aboutHead{
     font-size: 30px;
