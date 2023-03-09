@@ -217,6 +217,7 @@ button:hover{
 .row {
     display: flex;
     flex-wrap: wrap;
+    width: 90vw;
     gap: 25px;
     justify-content: center;
 }
