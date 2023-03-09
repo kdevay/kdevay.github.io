@@ -20,7 +20,6 @@ export default function Header(props) {
     }, [mode]); 
 
     const change = (e) => {
-        console.log('clicked')
         changeTab(e.target.id);
     }
 

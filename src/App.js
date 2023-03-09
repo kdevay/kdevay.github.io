@@ -57,14 +57,11 @@ export default function App() {
 function findInitialPreference(){
   // check local storage for pref if visited before
   const storedTheme = localStorage.getItem('storedTheme');
-  console.log('check for stored Theme: ', storedTheme);
   if (storedTheme){
     return storedTheme;
   }
   
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-  console.log('prefersDark: ', prefersDark);
-  console.log('prefersLight: ', prefersLight);
   return prefersLight ? 'light' : 'dark';
 }
