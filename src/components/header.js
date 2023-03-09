@@ -34,15 +34,17 @@ export default function Header(props) {
             
             <div id="tabs">
                 <div>
-                    <div onClick={change} className={'tab' + ' ' + tabMode + isASelected} id='about'>ABOUT</div>
+
+                    
+                    <div onClick={change} className={`tab ${tabMode + isASelected}`} id='about'>ABOUT</div>
                     {isASelected ? <hr></hr> : null}
                 </div>
                 <div>
-                    <div onClick={change} className={'tab' + ' ' + tabMode + isPSelected} id='projects'>PROJECTS</div>
+                    <div onClick={change} className={`tab ${tabMode + isPSelected}`} id='projects'>PROJECTS</div>
                     {isPSelected ? <hr></hr> : null}
                 </div>
                 <div>
-                    <div onClick={change} className={'tab' + ' ' + tabMode + isRSelected} id='resume'>RESUME</div>
+                    <div onClick={change} className={`tab ${tabMode + isRSelected}`} id='resume'>RESUME</div>
                     {isRSelected ? <hr className='rLine'></hr> : null}
                 </div>
             </div>
