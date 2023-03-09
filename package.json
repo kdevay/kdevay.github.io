@@ -2,7 +2,7 @@
   "name": "personal-cv",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://katdevay.com/personal-cv",
+  "homepage": "https:/kdevay.github.io/personal-cv",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

@@ -37,7 +37,7 @@ export default function App() {
       <div id="App">
           <div id='switchDiv'>
             <label className="switch">
-              <input onClick={toggleMode} type="checkbox"></input>
+              <input onClick={toggleMode} checked={mode === 'dark' ? true : false} type="checkbox"></input>
               <span className="slider"></span>
             </label>
           </div>
