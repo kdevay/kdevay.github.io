@@ -34,7 +34,7 @@ export default function Resume(props) {
                         <h5 className='resBody spacey'>NEW ORLEANS, LA</h5>
                         <h5 className='resBody'>JAN 2021&nbsp;&nbsp; ⇛ &nbsp;&nbsp;MAY 2022</h5>
                         <ul>
-                            <li className='resBody'>Collaborated asynchronously with distributed team</li>
+                            <li className='resBody'>Collaborated remotely with distributed team</li>
                             <li className='resBody'>Parsed client contact database to improve speed and IP reputation</li>
                             <li className='resBody'>Coordinated with upper management to streamline client categorization for direct marketing strategies</li>
                             <li className='resBody'>Content-edited whitepapers and form letters for mass mailing</li>
