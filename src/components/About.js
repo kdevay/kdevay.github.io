@@ -10,8 +10,8 @@ export default function About(props) {
         <div id='aboutDiv'>
             <div id='aboutText'>
                 <p className='aboutHead'>Hi, I'm Kat!</p><br></br>
-                <p className='aboutBody'>I'm a web developer from New Orleans.</p>
-                <p className='aboutBody'>If you are interested in working together, feel free to reach out!</p>
+                <p className='aboutBody'>I'm a developer from New Orleans, looking for a team of passionate professionals to collaborate with.</p><br></br>
+                <p className='aboutBody'>Let's work together!</p><br></br>
                 {
                     mode === 'dark' ? <DarkIcons></DarkIcons> : <LightIcons></LightIcons>
                 }

@@ -22,11 +22,11 @@ export default function App() {
   }
 
   const toggleMode = () => {
-    mode === 'light' ? setMode('dark') : setMode('light')
+    mode === 'light' ?  setMode('dark') : setMode('light');
   }
 
   useEffect(()=>{
-    let setting = mode === 'light' ? 'dark' : 'light';
+    let setting = mode === 'light' ? 'light' : 'dark' ;
     localStorage.setItem('storedTheme', setting); // save theme preference 
   }, [mode]);
 
@@ -57,7 +57,7 @@ export default function App() {
 function findInitialPreference(){
   // check local storage for pref if visited before
   const storedTheme = localStorage.getItem('storedTheme');
-  console.log('storedTheme: ', storedTheme);
+  console.log('check for stored Theme: ', storedTheme);
   if (storedTheme){
     return storedTheme;
   }

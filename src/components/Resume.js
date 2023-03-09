@@ -34,9 +34,10 @@ export default function Resume(props) {
                         <h5 className='resBody spacey'>NEW ORLEANS, LA</h5>
                         <h5 className='resBody'>JAN 2021&nbsp;&nbsp; ⇛ &nbsp;&nbsp;MAY 2022</h5>
                         <ul>
+                            <li className='resBody'>Collaborated asynchronously with distributed team</li>
                             <li className='resBody'>Parsed client contact database to improve speed and IP reputation</li>
                             <li className='resBody'>Coordinated with upper management to streamline client categorization for direct marketing strategies</li>
-                            <li className='resBody'>Content edited whitepapers and form letters for mass mailing</li>
+                            <li className='resBody'>Content-edited whitepapers and form letters for mass mailing</li>
                         </ul>
                         <br></br>
                         <div className='topLine'>
@@ -47,7 +48,7 @@ export default function Resume(props) {
                         <h5 className='resBody spacey'>NEW ORLEANS, LA</h5>
                         <h5 className='resBody'>JUN 2018&nbsp;&nbsp; ⇛ &nbsp;&nbsp;MAY 2020</h5>
                         <ul>
-                            <li className='resBody'>Recipe writing and development</li>
+                            <li className='resBody'>Developed and tested recipes.</li>
                             <li className='resBody'>Contributed to daily round-table discussions to improve food quality and efficiency</li>
                         </ul>
             </div>
