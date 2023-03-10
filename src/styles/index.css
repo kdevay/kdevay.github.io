@@ -47,6 +47,7 @@ button:hover{
     grid-template-rows: .5fr 4.5fr 100px;
     align-items: start;
     justify-items: center;
+    gap: 50px;
 }
 
 
@@ -86,6 +87,7 @@ button:hover{
     flex-direction: column;
     align-items: center;
     gap: 14px;
+    padding-bottom: 36px;
 }
 .nameDiv{
     display: flex;
@@ -144,7 +146,6 @@ button:hover{
     display: flex;
     flex-direction: column;
     gap: 60px;
-    margin-top: 50px;
 }
 .resSubDiv{
     font-family: 'Gloock';
@@ -211,7 +212,6 @@ button:hover{
     align-items: start;
     justify-items: center;
     gap: 90px;
-    margin: 50px 0px 65px 0px;
     align-items: center;
 }
 .row {
@@ -273,7 +273,6 @@ button:hover{
     align-items: center;
     justify-items: center;
     justify-content: center;
-    margin: 50px 0px;
     gap: 50px;
 }
 #aboutText{

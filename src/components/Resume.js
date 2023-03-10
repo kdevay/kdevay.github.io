@@ -21,7 +21,7 @@ export default function Resume(props) {
             </div>
             <div>
                 <h2 className='resSubDiv'>SKILLS</h2>
-                <h3 className='resBody'>functional programming &nbsp;•&nbsp; object-oriented programming &nbsp;•&nbsp; algorithms &nbsp;•&nbsp; data structures &nbsp;•&nbsp; software engineering</h3>
+                <h3 className='resBody'>Functional Programming &nbsp;•&nbsp; Object-Oriented Programming &nbsp;•&nbsp; Algorithms &nbsp;•&nbsp; Data Structures &nbsp;•&nbsp; Software Engineering</h3>
             </div>
 
             <div>
