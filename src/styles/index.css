@@ -221,18 +221,18 @@ button:hover{
     gap: 25px;
     justify-content: center;
 }
-.tile{
-    margin: 0 10px 10px 10px;
-    width: 430px;
-    border-radius: 6px;
-    overflow: hidden;
-    border: 4px solid #363537;
-}
+.tile,
 .darkTile{
     margin: 0 10px 10px 10px;
     width: 430px;
     border-radius: 6px;
     overflow: hidden;
+}
+.tile{
+    border: 4px solid #363537;
+}
+.darkTile{
+    border: 4px solid #363537;
 }
 .description{
     display: flex;
