@@ -175,6 +175,7 @@ button:hover{
 }
 .courseButton,
 .courseButtonD{
+    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
