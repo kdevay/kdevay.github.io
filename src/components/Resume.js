@@ -29,7 +29,7 @@ export default function Resume(props) {
                         <div className='topLine'>
                             <h3 className='resBody bold'>Chaffe & Associates</h3>
                             <h3 className='tallLine'>|</h3>
-                            <h4 className='resBody'>Technical Writer</h4>
+                            <h4 className='resBody'>Technical Writer / Assistant</h4>
                         </div>
                         <h5 className='resBody spacey'>NEW ORLEANS, LA</h5>
                         <h5 className='resBody'>JAN 2021&nbsp;&nbsp; ⇛ &nbsp;&nbsp;MAY 2022</h5>
@@ -69,7 +69,7 @@ export default function Resume(props) {
             <div>
                 <h2 className='resSubDiv'>EDUCATION</h2>
                 <h3 className='resBody'>Louisiana State University ｜ Baton Rouge, LA ｜ December 2020</h3>
-                <h4 className='resBody'>B.A. Creative Writing, Sociology Minor</h4>
+                <h4 className='resBody'>B.A. English, Sociology Minor</h4>
             </div>
 
         </div>
