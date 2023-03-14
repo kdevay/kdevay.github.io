@@ -49,20 +49,39 @@ export default function Resume(props) {
                         <h5 className='resBody'>JUN 2018&nbsp;&nbsp; ⇛ &nbsp;&nbsp;MAY 2020</h5>
                         <ul>
                             <li className='resBody'>Developed and tested recipes.</li>
-                            <li className='resBody'>Contributed to daily round-table discussions to improve food quality/consistency and efficiency</li>
+                            <li className='resBody'>Contributed to daily round-table discussions to improve food quality/consistency and workflow efficiency</li>
                         </ul>
             </div>
             <div>
                 <h2 className='resSubDiv'>COURSES</h2>
-                    <div className="courseRow">
+                    <h3 className='resBody bold'>Harvard CS50x</h3>
+                    <div className='courseDescription'>
+                        <h4 className='resBody'>
+                            CS50x is a computer science course released by Harvard University,
+                            covering the basics of computer mechanics, the history and structure of the web, 
+                            and a wide range of challenging programming problems. 
+                        </h4>
+                        <h4 className='resBody italic inset'>
+                            CS50x teaches students how to think algorithmically and solve problems efficiently. 
+                            Topics include abstraction, algorithms, data structures, encapsulation, resource management, 
+                            security, software engineering, and web development. 
+                            Languages include C, Python, SQL, and JavaScript plus CSS and HTML.
+                        </h4>
                         <a className={buttonClass} target="_blank" href='https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0'>
                             <img className="courseIcon" src={mode === 'dark' ? HarvardD : Harvard} alt="Logo for Harvard University"></img>
-                            <h3 className='resBody'>Harvard CS50x</h3>
                         </a>
-                    
+                    </div>
+                    <br></br>
+                    <h3 className='resBody bold'>The Odin Project</h3>
+                    <div className='courseDescription'>
+                        <h4 className='resBody'>
+                            The odin project is a free, open source curriculum for full-stack web development. 
+                            The curriculum begins with basic HTML, CSS, JavaScript, and Git, 
+                            then shifts to frontend with React or Ruby on Rails, 
+                            and ends on the server-side with Express and MongoDB in NodeJS.
+                        </h4>
                         <a className={buttonClass} target="_blank" className={buttonClass} href="https://www.theodinproject.com/about">
                             <img className="courseIcon" src={mode === 'dark' ? OdinD : Odin} alt="Logo for The Odin Project"></img>
-                            <h3 className='resBody'>The Odin Project</h3>
                         </a>                            
                     </div>
             </div>

@@ -30,6 +30,12 @@ span{
 .spacey{
     letter-spacing: 3px;
 }
+.italic{
+    font-style: italic;
+}
+.inset {
+    margin: 0 20px 5px;
+}
 /* a:hover, */
 button:hover{
     cursor: pointer;
@@ -175,11 +181,10 @@ button:hover{
 }
 .courseButton,
 .courseButtonD{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 10px 20px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
     border-radius: 6px;
     border: none;
 }
@@ -201,9 +206,11 @@ button:hover{
     width: 30px;
     height: 30px;
 }
-.courseRow{
+.courseDescription{
     display: flex;
-    gap: 50px;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 /* projects */
 #workDiv{
