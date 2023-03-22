@@ -148,10 +148,11 @@ button:hover{
 
 /* Middle pane */
 #resumeDiv{ /* resume */
-    padding: 0 10vw;
     display: flex;
     flex-direction: column;
     gap: 60px;
+    max-width: 950px;
+    padding: 0 10vw;
 }
 .resSubDiv{
     font-family: 'Gloock';
@@ -200,7 +201,7 @@ button:hover{
     box-shadow: 4px 4px 4px 0px black;
 }
 .courseButton:hover{
-    box-shadow: 4px 4px 4px 0px #363537;
+    box-shadow: 4px 4px 4px 0px #8b8888;
 }
 .courseIcon{
     width: 30px;

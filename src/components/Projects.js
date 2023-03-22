@@ -50,7 +50,7 @@ export default function Projects(props) {
                     <div className='description'>
                         <h2 className='resSubDiv'>Weather</h2>
                         <h3 className='ProjBody'>This project allows users to view local weather conditions of a specific location, by querying OpenWeather's geocoding and weather APIs.</h3>
-                        <h3 className='ProjBody'>A "loading" component displays from the moment the form is submitted until the requested information comes back from the API.</h3>
+                        <h3 className='ProjBody'>A "loading" component displays from the time the form is submitted until the information comes back from the API.</h3>
                         <h3 className='ProjBody'>The page styling changes to reflect the weather and time of day.</h3>
                     </div>
             </div>
@@ -62,7 +62,7 @@ export default function Projects(props) {
                     </div>
                     <div className='description'>
                         <h2 className='resSubDiv'>Sign Up</h2>
-                        <h3 className='ProjBody'>This is a generic sign-up page to practice form validation, using external fonts, and layering semi-transparent elements.</h3>
+                        <h3 className='ProjBody'>This is a generic sign-up page to practice form validation, external fonts, and layering semi-transparent elements.</h3>
                         <h3 className='ProjBody'>It was built using entirely vanilla JavaScript, HTML, and CSS.</h3>
                     </div>
             </div>
