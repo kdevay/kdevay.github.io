@@ -36,6 +36,9 @@ span{
 .inset {
     margin: 0 20px 5px;
 }
+a {
+    text-decoration: none;
+}
 /* a:hover, */
 button:hover{
     cursor: pointer;
@@ -159,6 +162,9 @@ button:hover{
     letter-spacing: 4px;
     margin-bottom: 12px;
 }
+.rowSubdivItem {
+    min-width: 50%;
+}
 .resBody{
     font-family: 'Outfit';
     font-weight: 300;
@@ -180,13 +186,22 @@ button:hover{
 .job{
     width: 430px;
 }
+.buttonRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
 .courseButton,
 .courseButtonD{
-    display: block;
-    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
     height: 30px;
     padding: 10px;
     border-radius: 6px;
+    margin-top: 10px;
     border: none;
 }
 .courseButtonD{
