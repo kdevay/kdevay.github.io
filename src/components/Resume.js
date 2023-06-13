@@ -17,15 +17,33 @@ export default function Resume(props) {
 
             <div>
                 <h2 className='resSubDiv'>LANGUAGES + TOOLS</h2>
-                <h3 className='resBody'>JavaScript &nbsp;•&nbsp; C &nbsp;•&nbsp; Python &nbsp;•&nbsp; SQL &nbsp;•&nbsp; HTML &nbsp;•&nbsp; CSS &nbsp;•&nbsp; React &nbsp;•&nbsp; Flask &nbsp;•&nbsp; Jinja &nbsp;•&nbsp; Webpack &nbsp;•&nbsp; Jest &nbsp;•&nbsp; NPM &nbsp;•&nbsp; Git &nbsp;•&nbsp; VSCode</h3>
+                <h3 className='resBody'>JavaScript &nbsp;•&nbsp; C &nbsp;•&nbsp; Python &nbsp;•&nbsp; TypeScript &nbsp;•&nbsp; SQL &nbsp;•&nbsp; HTML &nbsp;•&nbsp; CSS &nbsp;•&nbsp; SCSS &nbsp;•&nbsp; React &nbsp;•&nbsp; Flask &nbsp;•&nbsp; Jinja &nbsp;•&nbsp; Webpack &nbsp;•&nbsp; Jest &nbsp;•&nbsp; NPM &nbsp;•&nbsp; Git &nbsp;•&nbsp; VSCode &nbsp;•&nbsp; PgAdmin</h3>
             </div>
             <div>
                 <h2 className='resSubDiv'>SKILLS</h2>
-                <h3 className='resBody'>Functional Programming &nbsp;•&nbsp; Object-Oriented Programming &nbsp;•&nbsp; Algorithms &nbsp;•&nbsp; Data Structures &nbsp;•&nbsp; Software Engineering</h3>
+                <h3 className='resBody'>Functional Programming &nbsp;•&nbsp; Object-Oriented Programming &nbsp;•&nbsp; Design &nbsp;•&nbsp; Content Writing</h3>
             </div>
 
             <div>
                 <h2 className='resSubDiv'>EXPERIENCE</h2>
+                        <div className='topLine'>
+                            <h3 className='resBody bold'>BudgetSimple </h3>
+                            <h3 className='tallLine'>|</h3>
+                            <h4 className='resBody'>Web Developer</h4>
+                        </div>
+                        <h5 className='resBody spacey'>NEW ORLEANS, LA</h5>
+                        <h5 className='resBody'>APR 2023&nbsp;&nbsp; ⇛ &nbsp;&nbsp;PRESENT</h5>
+                        <ul>
+                            <li className='resBody'>Developed a suite of financial calculators for budgeting: retirement planning, debt repayment, credit utilization, take-home pay, and college savings</li>
+                            <li className='resBody'>Built componentized budget tools and using React</li>
+                            <li className='resBody'>Collaborated remotely with distributed team</li>
+                            <li className='resBody'>Used TypeScript to limit errors and enhance code clarity and self-documentation</li>
+                            <li className='resBody'>Distilled complex financial concepts into succinct instructional content</li>
+                            <li className='resBody'>Participated in regular code reviews</li>
+                            <li className='resBody'>Implemented new global styles using SASS to enhance brand consistency</li>
+                            <li className='resBody'>Contributed to weekly team discussions for feature development</li>
+                        </ul>
+                        <br></br>
                         <div className='topLine'>
                             <h3 className='resBody bold'>Chaffe & Associates</h3>
                             <h3 className='tallLine'>|</h3>
@@ -38,18 +56,6 @@ export default function Resume(props) {
                             <li className='resBody'>Parsed client contact database to improve speed and IP reputation</li>
                             <li className='resBody'>Coordinated with upper management to streamline client categorization for direct marketing strategies</li>
                             <li className='resBody'>Content-edited whitepapers and form letters for mass mailing</li>
-                        </ul>
-                        <br></br>
-                        <div className='topLine'>
-                            <h3 className='resBody bold'>Paladar 511 </h3>
-                            <h3 className='tallLine'>|</h3>
-                            <h4 className='resBody'>Chef</h4>
-                        </div>
-                        <h5 className='resBody spacey'>NEW ORLEANS, LA</h5>
-                        <h5 className='resBody'>JUN 2018&nbsp;&nbsp; ⇛ &nbsp;&nbsp;MAY 2020</h5>
-                        <ul>
-                            <li className='resBody'>Developed and tested recipes.</li>
-                            <li className='resBody'>Contributed to daily round-table discussions to improve food quality/consistency and workflow efficiency</li>
                         </ul>
             </div>
             <div>
