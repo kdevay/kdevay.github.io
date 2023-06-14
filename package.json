@@ -1,12 +1,12 @@
 {
   "name": "personal-cv",
   "version": "0.1.0",
-  "private": true, 
+  "private": true,
   "homepage": "https://katdevay.com",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "styled-components": "^5.3.8"
   },
   "scripts": {
