@@ -17,7 +17,7 @@ export default function About(props) {
                 }
             </div>
             <div className={'frame' + mode}>
-                <img className='profile' src={prof} alt='profile of developer'></img>
+                <img className='profile' src={prof} alt='Kat devay in front of a blank wall'></img>
             </div>
 
         </div>
