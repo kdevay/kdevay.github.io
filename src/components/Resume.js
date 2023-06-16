@@ -31,7 +31,7 @@ export default function Resume(props) {
                         <h5 className='resBody'>APR 2023&nbsp;&nbsp; ⇛ &nbsp;&nbsp;PRESENT</h5>
                         <ul>
                             <li className='resBody'>Developed a suite of financial calculators for budgeting: retirement planning, debt repayment, credit utilization, take-home pay, and college savings</li>
-                            <li className='resBody'>Built budgeting components using React</li>
+                            <li className='resBody'>Built reusable components for calculator forms and results using React</li>
                             <li className='resBody'>Collaborated remotely with distributed team</li>
                             <li className='resBody'>Used TypeScript to limit errors and enhance code clarity and self-documentation</li>
                             <li className='resBody'>Distilled complex financial concepts into succinct instructional content</li>
