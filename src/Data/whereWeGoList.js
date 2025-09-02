@@ -39,11 +39,8 @@ const whereWeGoList = [
     <a href='https://basecamp.com/shapeup'>Shape-Up</a>
   </>,
   <>
-    Created documentation and{' '}
-    <a href='https://docs.google.com/spreadsheets/d/1JEssSgPvYmlwkN_H5SuRStN3F2NI45fvUjhp4zAubSs/edit?usp=sharing'>
-      internal jargon glossary
-    </a>
-    for new developer onboarding
+    Created documentation and internal jargon glossary for new developer
+    onboarding
   </>,
   <>
     Led a committee to improve right-sizing of MVP based on build duration and
