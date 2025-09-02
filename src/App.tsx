@@ -8,16 +8,16 @@ import LightIcons from './components/LightIcons';
 import Resume from './components/Resume';
 import About from './components/About';
 import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 export default function App() {
   const [mode, setMode] = useState(findInitialPreference());
-  const [tab, setTab] = useState('about');
+  const [tab, setTab] = useState('ABOUT');
 
   const changeTab = id => {
-    console.log('id', id);
-    if (id === 'about') setTab('about');
-    if (id === 'projects') setTab('projects');
-    if (id === 'resume') setTab('resume');
+    if (id === 'ABOUT') setTab('ABOUT');
+    if (id === 'PROJECTS') setTab('PROJECTS');
+    if (id === 'RESUME') setTab('RESUME');
   };
 
   const toggleMode = () => {
@@ -47,16 +47,10 @@ export default function App() {
           </div>
           <div className='relative min-h-screen min-w-screen m-0 grid grid-cols-1 grid-rows-main items-start justify-center gap-[50px]'>
             <Header mode={mode} tab={tab} changeTab={changeTab}></Header>
-            {tab === 'about' && <About mode={mode}></About>}
-            {tab === 'projects' && <Projects mode={mode}></Projects>}
-            {tab === 'resume' && <Resume mode={mode}></Resume>}
-            {tab !== 'about' ? (
-              mode === 'dark' ? (
-                <DarkIcons></DarkIcons>
-              ) : (
-                <LightIcons></LightIcons>
-              )
-            ) : null}
+            {tab === 'ABOUT' && <About mode={mode}></About>}
+            {tab === 'PROJECTS' && <Projects mode={mode}></Projects>}
+            {tab === 'RESUME' && <Resume mode={mode}></Resume>}
+            <Footer mode={mode} tab={tab} />
           </div>
         </div>
       </>
