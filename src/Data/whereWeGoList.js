@@ -63,3 +63,5 @@ const whereWeGoList = [
   </>,
   ,
 ];
+
+export default whereWeGoList;
