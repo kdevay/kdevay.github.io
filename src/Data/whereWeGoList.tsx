@@ -1,4 +1,4 @@
-const whereWeGoList = [
+const whereWeGoList: React.ReactNode[] = [
   <>
     Developed custom workforce software using TypeScript, NextJs, Nest, and
     Payload
@@ -16,7 +16,10 @@ const whereWeGoList = [
   <>
     Designed and deployed novel system architecture integrating a third party
     application into key user flows using middleware in Nest (
-    <a href='https://drive.google.com/file/d/1CXqeaJEJssS2EQq59e4eCMtcd8JVZqax/view?usp=sharing'>
+    <a
+      className='text-primary'
+      href='https://drive.google.com/file/d/1CXqeaJEJssS2EQq59e4eCMtcd8JVZqax/view?usp=sharing'
+    >
       architecture diagram
     </a>
     )
@@ -36,14 +39,13 @@ const whereWeGoList = [
   </>,
   <>
     Collaborated with C-suite to create a custom SDLC based on{' '}
-    <a href='https://basecamp.com/shapeup'>Shape-Up</a>
+    <a className='text-primary' href='https://basecamp.com/shapeup'>
+      Shape-Up
+    </a>
   </>,
   <>
-    Created documentation and{' '}
-    <a href='https://docs.google.com/spreadsheets/d/1JEssSgPvYmlwkN_H5SuRStN3F2NI45fvUjhp4zAubSs/edit?usp=sharing'>
-      internal jargon glossary
-    </a>
-    for new developer onboarding
+    Created documentation and internal jargon glossary for new developer
+    onboarding
   </>,
   <>
     Led a committee to improve right-sizing of MVP based on build duration and
@@ -56,10 +58,15 @@ const whereWeGoList = [
   <>
     Led code reviews to explain complex code solutions and new tools to fellow
     developers (
-    <a href='https://drive.google.com/file/d/1H9aTGMVadcS37_ce5ZW-JszNgfa-HFKR/view?usp=sharing'>
+    <a
+      className='text-primary'
+      href='https://drive.google.com/file/d/1H9aTGMVadcS37_ce5ZW-JszNgfa-HFKR/view?usp=sharing'
+    >
       example
     </a>
     )
   </>,
   ,
 ];
+
+export default whereWeGoList;

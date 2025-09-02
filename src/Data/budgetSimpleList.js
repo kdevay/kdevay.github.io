@@ -8,3 +8,5 @@ const budgetSimpleList = [
   'Implemented new global styles using SASS to enhance brand consistency',
   'Contributed to weekly team discussions for feature development',
 ];
+
+export default budgetSimpleList;
