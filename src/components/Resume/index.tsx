@@ -36,33 +36,39 @@ export default function Resume() {
   ];
 
   return (
-    <div className='flex flex-col gap-[60px] max-w-[950px] px-[10vw] font-main'>
+    <div className='flex flex-col items-start gap-8 justify-center max-w-[950px] mx-auto font-main'>
       <div>
-        <h2 className='font-heading tracking-[4px] mb-3'>LANGUAGES + TOOLS</h2>
+        <h2 className='font-heading tracking-[4px] text-xl pb-3'>SKILLS</h2>
         <h3 className='font-light'>{skills.join(' • ')}</h3>
       </div>
 
-      <div>
-        <h2 className='font-heading tracking-[4px] mb-3'>EXPERIENCE</h2>
-        <JobHeader
-          companyName='WhereWeGo'
-          title='Software Engineer'
-          location='New Orleans, LA'
-          startDate='JUL 2023'
-          endDate='PRESENT'
-        />
-        <JobList list={whereWeGoList} companyName='WhereWeGo' />
-        <JobHeader
-          companyName='BudgetSimple'
-          title='Contract Web Developer'
-          location='New Orleans, LA'
-          startDate='APR 2023'
-          endDate='JUL 2023'
-        />
-        <JobList list={budgetSimpleList} companyName='BudgetSimple' />
+      <div className='flex flex-col items-start gap-4 justify-center'>
+        <div>
+          <h2 className='font-heading tracking-[4px] text-xl pb-3'>
+            EXPERIENCE
+          </h2>
+          <JobHeader
+            companyName='WhereWeGo'
+            title='Software Engineer'
+            location='New Orleans, LA'
+            startDate='JUL 2023'
+            endDate='PRESENT'
+          />
+          <JobList list={whereWeGoList} companyName='WhereWeGo' />
+        </div>
+        <div>
+          <JobHeader
+            companyName='BudgetSimple'
+            title='Contract Web Developer'
+            location='New Orleans, LA'
+            startDate='APR 2023'
+            endDate='JUL 2023'
+          />
+          <JobList list={budgetSimpleList} companyName='BudgetSimple' />
+        </div>
       </div>
       <div className='font-main'>
-        <h2 className='font-heading tracking-[4px] mb-3'>EDUCATION</h2>
+        <h2 className='font-heading tracking-[4px] text-xl pb-3'>EDUCATION</h2>
         <h3 className='font-light'>
           Louisiana State University ｜ Baton Rouge, LA ｜ December 2020
         </h3>
