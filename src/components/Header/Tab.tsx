@@ -1,15 +1,16 @@
+import React from 'react';
 import { cn } from '../../utils/cn';
 
 interface TabProps {
   isOpen: boolean;
-  changeTab: (e: React.MouseEvent<HTMLDivElement>) => void;
+  changeTab: (e: React.MouseEvent<HTMLButtonElement>) => void;
   tabName: string;
 }
 
 const Tab: React.FC<TabProps> = ({ isOpen, changeTab, tabName }) => {
   return (
     <div>
-      <div
+      <button
         onClick={changeTab}
         className={cn(
           'font-main text-[13px] h-[23px] tracking-[3px] p-0 mb-0',
@@ -18,7 +19,7 @@ const Tab: React.FC<TabProps> = ({ isOpen, changeTab, tabName }) => {
         id={tabName}
       >
         {tabName}
-      </div>
+      </button>
       {isOpen ? <hr></hr> : null}
     </div>
   );

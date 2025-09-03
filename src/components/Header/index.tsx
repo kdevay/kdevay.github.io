@@ -40,7 +40,7 @@ const Header: React.FC<HeaderProps> = ({ changeTab, tab }) => {
         FULL STACK SOFTWARE ENGINEER
       </h2>
 
-      <div id='tabs' className='w-[321px] flex justify-between'>
+      <div id='tabs' className='w-[321px] mt-3 flex justify-between'>
         <Tab isOpen={isAboutTabOpen} changeTab={change} tabName='ABOUT' />
         <Tab isOpen={isProjectsTabOpen} changeTab={change} tabName='PROJECTS' />
         <Tab isOpen={isResumeTabOpen} changeTab={change} tabName='RESUME' />
