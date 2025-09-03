@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyles } from './components/GlobalStyles';
-import { lightTheme, darkTheme } from './components/Themes';
+import { GlobalStyles } from './styles/GlobalStyles.js';
+import { lightTheme, darkTheme } from './styles/Themes.js';
 // Components
 import Header from './components/Header';
 import Resume from './components/Resume';
