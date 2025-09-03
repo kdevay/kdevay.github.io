@@ -1,7 +1,5 @@
-import React from 'react';
 import lin from '../icons/lin.png';
 import octocat from '../icons/octocat.png';
-import phone from '../icons/phone.png';
 import mail from '../icons/mail.png';
 
 export default function HeaderL() {

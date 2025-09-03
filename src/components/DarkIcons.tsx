@@ -1,8 +1,6 @@
-import React from 'react';
 import dLin from '../icons/dLin.png';
 import dOctocat from '../icons/dOctocat.png';
 import dMail from '../icons/dMail.png';
-import dPhone from '../icons/dPhone.png';
 
 export default function DarkIcons() {
   return (
