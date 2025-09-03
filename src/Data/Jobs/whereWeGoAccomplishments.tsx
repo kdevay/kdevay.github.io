@@ -1,4 +1,4 @@
-const whereWeGoList: React.ReactNode[] = [
+const whereWeGoAccomplishments: React.ReactNode[] = [
   <>
     Developed custom workforce software using TypeScript, NextJs, Nest, and
     Payload
@@ -69,4 +69,4 @@ const whereWeGoList: React.ReactNode[] = [
   ,
 ];
 
-export default whereWeGoList;
+export default whereWeGoAccomplishments;

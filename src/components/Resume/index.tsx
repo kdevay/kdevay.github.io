@@ -1,40 +1,11 @@
-import React from 'react';
-// components
+// Data
+import skills from '../../Data/skills';
+import jobs from '../../Data/Jobs';
+// Components
 import JobHeader from './JobHeader';
-import JobList from './JobList';
-import whereWeGoList from '../../Data/whereWeGoList';
-import budgetSimpleList from '../../Data/budgetSimpleList';
+import JobAccomplishments from './JobAccomplishments';
 
 export default function Resume() {
-  const skills = [
-    'JavaScript',
-    'C',
-    'Python',
-    'TypeScript',
-    'React',
-    'Mongoose',
-    'SQL',
-    'HTML',
-    'Jest',
-    'Payload',
-    'NextJs',
-    'Storybook',
-    'Nest',
-    'Flask',
-    'MongoDB',
-    'Tailwind',
-    'CSS',
-    'SCSS',
-    'ShadCN',
-    'Material UI',
-    'Git',
-    'NPM',
-    'PNPM',
-    'Yarn',
-    'VSCode',
-    'Cursor',
-  ];
-
   return (
     <div className='flex flex-col items-start gap-8 justify-center max-w-[950px] mx-auto font-main'>
       <div>
@@ -42,29 +13,24 @@ export default function Resume() {
         <h3 className='font-light'>{skills.join(' • ')}</h3>
       </div>
 
-      <div className='flex flex-col items-start gap-4 justify-center'>
-        <div>
-          <h2 className='font-heading tracking-[4px] text-xl pb-3'>
-            EXPERIENCE
-          </h2>
-          <JobHeader
-            companyName='WhereWeGo'
-            title='Software Engineer'
-            location='New Orleans, LA'
-            startDate='JUL 2023'
-            endDate='PRESENT'
-          />
-          <JobList list={whereWeGoList} companyName='WhereWeGo' />
-        </div>
-        <div>
-          <JobHeader
-            companyName='BudgetSimple'
-            title='Contract Web Developer'
-            location='New Orleans, LA'
-            startDate='APR 2023'
-            endDate='JUL 2023'
-          />
-          <JobList list={budgetSimpleList} companyName='BudgetSimple' />
+      <div className='flex flex-col items-start justify-center'>
+        <h2 className='font-heading tracking-[4px] text-xl pb-3'>EXPERIENCE</h2>
+        <div className='flex flex-col items-start justify-center gap-4'>
+          {jobs.map(job => (
+            <div>
+              <JobHeader
+                jobTitle={job.jobTitle}
+                companyName={job.companyName}
+                location={job.location}
+                startDate={job.startDate}
+                endDate={job.endDate}
+              />
+              <JobAccomplishments
+                accomplishments={job.accomplishments}
+                companyName={job.companyName}
+              />
+            </div>
+          ))}
         </div>
       </div>
       <div className='font-main'>

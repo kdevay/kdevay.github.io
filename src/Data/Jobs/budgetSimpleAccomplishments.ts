@@ -1,4 +1,4 @@
-const budgetSimpleList = [
+const budgetSimpleAccomplishments = [
   'Developed a suite of financial calculators for budgeting: retirement planning, debt repayment, credit utilization, take-home pay, andcollege savings',
   'Built reusable components form UI using React',
   'Collaborated remotely with distributed team',
@@ -9,4 +9,4 @@ const budgetSimpleList = [
   'Contributed to weekly team discussions for feature development',
 ];
 
-export default budgetSimpleList;
+export default budgetSimpleAccomplishments;
