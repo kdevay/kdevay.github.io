@@ -1,7 +1,7 @@
 import prof from './Resume/prof.jpeg';
 import DarkIcons from './DarkIcons.js';
 import LightIcons from './LightIcons.js';
-import { cn } from '../utils/cn.ts';
+import { cn } from '../utils/cn';
 
 export default function About(props) {
   const { mode } = props;
