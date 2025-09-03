@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './components/GlobalStyles';
 import { lightTheme, darkTheme } from './components/Themes';
+// Components
 import Header from './components/Header';
-import DarkIcons from './components/DarkIcons';
-import LightIcons from './components/LightIcons';
 import Resume from './components/Resume';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -46,10 +45,10 @@ export default function App() {
             </label>
           </div>
           <div className='relative min-h-screen min-w-screen m-0 grid grid-cols-1 grid-rows-main items-start justify-center gap-[50px]'>
-            <Header mode={mode} tab={tab} changeTab={changeTab}></Header>
-            {tab === 'ABOUT' && <About mode={mode}></About>}
-            {tab === 'PROJECTS' && <Projects mode={mode}></Projects>}
-            {tab === 'RESUME' && <Resume mode={mode}></Resume>}
+            <Header mode={mode} tab={tab} changeTab={changeTab} />
+            {tab === 'ABOUT' && <About mode={mode} />}
+            {tab === 'PROJECTS' && <Projects mode={mode} />}
+            {tab === 'RESUME' && <Resume />}
             <Footer mode={mode} tab={tab} />
           </div>
         </div>
@@ -59,13 +58,12 @@ export default function App() {
 }
 
 function findInitialPreference() {
-  // check local storage for pref if visited before
+  // Check local storage for pref if visited before
   const storedTheme = localStorage.getItem('storedTheme');
   if (storedTheme) {
     return storedTheme;
   }
 
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const prefersLight = window.matchMedia(
     '(prefers-color-scheme: light)',
   ).matches;
