@@ -66,7 +66,6 @@ const whereWeGoAccomplishments: React.ReactNode[] = [
     </a>
     )
   </>,
-  ,
 ];
 
 export default whereWeGoAccomplishments;
