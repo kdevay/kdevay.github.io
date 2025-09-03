@@ -1,7 +1,6 @@
 interface JobHeaderProps {
   companyName: string;
   jobTitle: string;
-  location: string;
   startDate: string;
   endDate: string;
 }
@@ -9,7 +8,6 @@ interface JobHeaderProps {
 const JobHeader: React.FC<JobHeaderProps> = ({
   companyName,
   jobTitle,
-  location,
   startDate,
   endDate,
 }) => {
@@ -20,7 +18,6 @@ const JobHeader: React.FC<JobHeaderProps> = ({
         <h3 className='font-courier block weight-extraLight text-[18px]'>|</h3>
         <h4>{jobTitle}</h4>
       </div>
-      <h5 className='tracking-[3px]'>{location}</h5>
       <h5>
         {startDate}&nbsp;&nbsp; ⇛ &nbsp;&nbsp;{endDate}
       </h5>
