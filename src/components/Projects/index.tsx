@@ -1,6 +1,6 @@
 import ProjectImage from './Image';
 import ProjectDescription from './Description';
-import projects from '../../Data/projects';
+import projects from '../../assets/data/projects';
 
 export default function Projects(props) {
   return (

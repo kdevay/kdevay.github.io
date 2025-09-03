@@ -1,6 +1,6 @@
 // Data
-import skills from '../../Data/skills';
-import jobs from '../../Data/Jobs';
+import skills from '../../assets/data/skills';
+import jobs from '../../assets/data/Jobs';
 // Components
 import JobHeader from './JobHeader';
 import JobAccomplishments from './JobAccomplishments';
