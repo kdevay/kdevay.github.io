@@ -1,5 +1,4 @@
-import React from 'react';
-import prof from '../images/prof.jpeg';
+import prof from './Resume/prof.jpeg';
 import DarkIcons from './DarkIcons.js';
 import LightIcons from './LightIcons.js';
 import { cn } from '../utils/cn.ts';
@@ -13,8 +12,8 @@ export default function About(props) {
         <p className='text-[30px]'>Hi, I'm Kat!</p>
         <br></br>
         <p className='text-[20px]'>
-          I'm a full stack developer, looking to join a team of passionate
-          professionals.
+          I'm a full stack software engineer, looking to join a team of
+          passionate professionals.
         </p>
         <br></br>
         <p className='text-[20px]'>Let's work together!</p>

@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { cn } from '../../utils/cn';
 import Tab from './Tab';
 
 interface HeaderProps {
@@ -38,7 +37,7 @@ const Header: React.FC<HeaderProps> = ({ changeTab, tab }) => {
         id='title'
         className='font-main text-[18px] m-[-4px] mb-[22px] tracking-[3px] font-medium'
       >
-        FULL STACK WEB DEVELOPER
+        FULL STACK SOFTWARE ENGINEER
       </h2>
 
       <div id='tabs' className='w-[321px] flex justify-between'>
