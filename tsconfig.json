@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "types": ["vite/client", "react", "react-dom"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  }
+}
