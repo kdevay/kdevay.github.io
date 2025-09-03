@@ -1,6 +1,6 @@
-import lin from '../icons/lin.png';
-import octocat from '../icons/octocat.png';
-import mail from '../icons/mail.png';
+import lin from '../assets/icons/lin.png';
+import octocat from '../assets/icons/octocat.png';
+import mail from '../assets/icons/mail.png';
 
 export default function HeaderL() {
   return (

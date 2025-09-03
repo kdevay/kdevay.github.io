@@ -1,6 +1,6 @@
 import prof from './Resume/prof.jpeg';
-import DarkIcons from './DarkIcons.js';
-import LightIcons from './LightIcons.js';
+import DarkIcons from './DarkIcons';
+import LightIcons from './LightIcons';
 import { cn } from '../utils/cn';
 
 export default function About(props) {

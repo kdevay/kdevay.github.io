@@ -1,6 +1,6 @@
-import dLin from '../icons/dLin.png';
-import dOctocat from '../icons/dOctocat.png';
-import dMail from '../icons/dMail.png';
+import dLin from '../assets/icons/dLin.png';
+import dOctocat from '../assets/icons/dOctocat.png';
+import dMail from '../assets/icons/dMail.png';
 
 export default function DarkIcons() {
   return (
