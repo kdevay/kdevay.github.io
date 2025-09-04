@@ -1,16 +1,17 @@
 import DarkIcons from './DarkIcons';
 import LightIcons from './LightIcons';
+import { useTheme } from '../utils/ThemeProvider';
 
 interface FooterProps {
   tab: string;
-  mode: string;
 }
 
-const Footer: React.FC<FooterProps> = ({ tab, mode }) => {
+const Footer: React.FC<FooterProps> = ({ tab }) => {
+  const { theme } = useTheme();
   return (
     <section>
       {tab !== 'ABOUT' ? (
-        mode === 'dark' ? (
+        theme === 'dark' ? (
           <DarkIcons></DarkIcons>
         ) : (
           <LightIcons></LightIcons>
