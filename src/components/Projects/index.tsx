@@ -6,7 +6,7 @@ export default function Projects(props) {
   return (
     <div className='font-main w-full flex flex-col items-start justify-center gap-[90px]'>
       {projects.map((project, index) => (
-        <div className='flex flex-wrap w-[90vw] gap-[25px] justify-center'>
+        <div className='flex flex-wrap w-full gap-[25px] justify-center'>
           <ProjectImage
             key={index}
             href={project.href}
