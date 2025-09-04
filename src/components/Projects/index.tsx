@@ -2,7 +2,9 @@ import ProjectImage from './Image';
 import ProjectDescription from './Description';
 import projects from '../../assets/data/projects';
 
-export default function Projects(props) {
+interface ProjectsProps {}
+
+const Projects: React.FC<ProjectsProps> = () => {
   return (
     <div className='font-main w-full flex flex-col items-start justify-center gap-[90px]'>
       {projects.map((project, index) => (
@@ -22,4 +24,6 @@ export default function Projects(props) {
       ))}
     </div>
   );
-}
+};
+
+export default Projects;

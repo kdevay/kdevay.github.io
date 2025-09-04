@@ -4,7 +4,6 @@ import Tab from './Tab';
 interface HeaderProps {
   changeTab: (e: React.MouseEvent<HTMLDivElement>) => void;
   tab: string;
-  mode: string;
 }
 
 const Header: React.FC<HeaderProps> = ({ changeTab, tab }) => {
