@@ -7,11 +7,11 @@ const whereWeGoAccomplishments: React.ReactNode[] = [
   <>
     Managed a team of 4 remote engineers to develop and deploy a full-stack
     refactor of the highest traffic parts of an app, encompassing 40% of all
-    pages, within a 3 week period
+    pages, within a three week period
   </>,
   <>
-    Built a component library using Storybook and ShadCn to support marketing
-    and multi-tenancy
+    Built a component library using Storybook and ShadCn to support product
+    development and multi-tenancy
   </>,
   <>
     Designed and deployed novel system architecture integrating a third party

@@ -3,6 +3,7 @@ import Froot from '../images/froot.png';
 import Weather from '../images/weather.png';
 import Dash from '../images/dash.png';
 import SignUp from '../images/signUp.png';
+import Explore from '../images/explore.jpg';
 
 interface Project {
   href: string;
@@ -13,6 +14,17 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    href: 'https://explore.skillup.org/jobs',
+    imageSrc: Explore,
+    alt: 'Screenshot of the SkillUp Jobs Page',
+    title: 'SkillUp Explore App',
+    description: [
+      'This workforce app was my primary responsibility at WhereWeGo.',
+      'While the majority of my contributions were to the frontend of the app, which was built with React and Next.js, I was responsible for the full stack including Nest API, Payload CMS, and Mongo Database.',
+      'During my time here I refactored roughly 90% of the app, and contributed many new features including an integration with EvolveMe, a youth-oriented up-skilling app created by American Student Assistance (ASA).',
+    ],
+  },
   {
     href: 'https://kdevay.github.io/Etch-a-Sketch/',
     imageSrc: Sketch,
