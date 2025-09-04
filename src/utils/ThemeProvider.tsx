@@ -2,19 +2,28 @@ import React, {
   createContext,
   useContext,
   ReactNode,
-  useEffect,
   useState,
+  useCallback,
+  useEffect,
 } from 'react';
 
+// Helpers
 const findInitialPreference = () => {
   const storedTheme = localStorage.getItem('storedTheme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   return storedTheme || prefersDark ? 'dark' : 'light';
 };
 
+const storeThemeInBrowser = (theme: string) => {
+  // Save to localStorage
+  localStorage.setItem('storedTheme', theme);
+  // Set the data-theme attribute
+  document.documentElement.setAttribute('data-theme', theme);
+};
+
 interface ThemeProviderContextType {
-  mode: string;
-  toggleMode: () => void;
+  theme: string;
+  toggleTheme: () => void;
 }
 
 const ThemeProviderContext = createContext<
@@ -29,29 +38,29 @@ export const useTheme = () => {
   return context;
 };
 
-interface ThemeProviderProviderProps {
+interface ThemeProviderProps {
   children: ReactNode;
 }
 
-export const ThemeProviderProvider: React.FC<ThemeProviderProviderProps> = ({
-  children,
-}) => {
-  const [mode, setMode] = useState(findInitialPreference());
+export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
+  const [theme, setTheme] = useState(findInitialPreference());
 
-  const toggleMode = () => {
-    const newMode = mode === 'light' ? 'dark' : 'light';
-    setMode(newMode);
-    // Save to localStorage
-    localStorage.setItem('storedTheme', mode);
-    // Set the data-theme attribute
-    document.documentElement.setAttribute('data-theme', mode);
-  };
+  // Set the theme in the browser on mount
+  useEffect(() => {
+    storeThemeInBrowser(theme);
+  }, []);
+
+  const toggleTheme = useCallback(() => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    storeThemeInBrowser(newTheme);
+  }, [theme]);
 
   return (
     <ThemeProviderContext.Provider
       value={{
-        mode,
-        toggleMode,
+        theme,
+        toggleTheme,
       }}
     >
       {children}

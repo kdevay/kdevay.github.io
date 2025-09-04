@@ -9,7 +9,7 @@ import Resume from './components/Resume';
 import Toggle from './components/Toggle.js';
 
 export default function App() {
-  const { mode, toggleMode } = useTheme();
+  const { theme, toggleTheme } = useTheme();
   const [tab, setTab] = useState('ABOUT');
 
   const changeTab = id => {
@@ -22,13 +22,13 @@ export default function App() {
     <>
       {/* Global bg and text color for dark and light theme set here */}
       <div id='App' className='overflow-hidden bg-background text-textColor'>
-        <Toggle mode={mode} toggleMode={toggleMode} />
+        <Toggle theme={theme} toggleTheme={toggleTheme} />
         <div className='relative min-h-screen min-w-screen mx-auto px-4 m-0 grid grid-cols-1 grid-rows-main items-start justify-center gap-[50px]'>
-          <Header mode={mode} tab={tab} changeTab={changeTab} />
-          {tab === 'ABOUT' && <About mode={mode} />}
-          {tab === 'PROJECTS' && <Projects mode={mode} />}
+          <Header tab={tab} changeTab={changeTab} />
+          {tab === 'ABOUT' && <About />}
+          {tab === 'PROJECTS' && <Projects />}
           {tab === 'RESUME' && <Resume />}
-          <Footer mode={mode} tab={tab} />
+          <Footer tab={tab} />
         </div>
       </div>
     </>
