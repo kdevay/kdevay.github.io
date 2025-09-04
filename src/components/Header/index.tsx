@@ -28,16 +28,18 @@ const Header: React.FC<HeaderProps> = ({ changeTab, tab }) => {
   return (
     <div id='header' className='flex flex-col items-center gap-4 pb-4'>
       <div className='flex justify-center items-end font-heading'>
-        <h1 className='m-0 font-heading'>KAT &nbsp; DE</h1> &nbsp;
-        <h1 className='text-bigV m-bigV'> V</h1>
-        <h1 className='m-0'>AY</h1>
+        <h1 className='m-0 font-heading xs:text-lg'>KAT &nbsp; DE</h1> &nbsp;
+        <h1 className='text-bigV m-bigV xs:text-bigV'> V</h1>
+        <h1 className='m-0 xs:text-lg'>AY</h1>
       </div>
 
       <h2
         id='title'
-        className='font-main text-[18px] m-[-4px] mb-[22px] tracking-[3px] font-medium'
+        className='font-main text-center text-sm md:text-[18px] m-[-4px] mb-[22px] tracking-[3px] font-medium'
       >
-        FULL STACK SOFTWARE ENGINEER
+        FULL STACK &nbsp;
+        <br className='xs:block hidden' />
+        SOFTWARE ENGINEER
       </h2>
 
       <div id='tabs' className='w-[321px] mt-3 flex justify-between'>
