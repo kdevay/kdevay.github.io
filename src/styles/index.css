@@ -1,5 +1,26 @@
 @import 'tailwindcss';
 
+/* Light theme */
+:root,
+[data-theme='light'] {
+  --color-primary: #547ca6;
+  --color-body: #ffffff;
+  --color-text: #000000;
+  --color-background: #ffffff;
+  --color-toggle-border: #ffffff;
+  --color-border: #363537;
+}
+
+/* Dark theme */
+[data-theme='dark'] {
+  --color-primary: #73aae2;
+  --color-body: #191919;
+  --color-text: #d8d8d8;
+  --color-background: #191919;
+  --color-toggle-border: #6b8096;
+  --color-border: #727d8a;
+}
+
 @theme {
   --font-heading: 'Gloock', serif;
   --font-main: 'Outfit', sans-serif;
@@ -8,20 +29,24 @@
   --font-weight-extraLight: 100;
   --font-size-bigV: 45px;
   --color-primary: var(--color-primary);
+  --color-background: var(--color-background);
+  --color-textColor: var(--color-text);
+  --color-body: var(--color-body);
+  --color-border: var(--color-border);
+  --color-toggleBorder: var(--color-toggle-border);
   --grid-template-rows-main: 0.5fr 4.5fr 100px;
 }
 
-/* Light theme - colors only */
-[data-theme='light'],
-:root {
-  --color-primary: #547ca6;
-  /* All your light mode colors */
-}
-
-/* Dark theme - colors only */
-[data-theme='dark'] {
-  --color-primary: #73aae2;
-  /* All your dark mode colors */
+@media (max-width: 350px) {
+  .xs\:block {
+    @apply block;
+  }
+  .xs\:text-lg {
+    @apply text-2xl;
+  }
+  .xs\:text-bigV {
+    @apply text-3xl;
+  }
 }
 
 /* global styles */
@@ -52,6 +77,34 @@ span {
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
+}
+
+/* Dark and light mode transitions */
+* {
+  transition: background-color 0.25s linear, color 0.25s linear,
+    border-color 0.25s linear;
+}
+
+/* Or more specific */
+body,
+div,
+section,
+header,
+main,
+aside,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+button {
+  transition: background-color 0.5s linear, color 0.5s linear,
+    border-color 0.5s linear;
 }
 
 .italic {
