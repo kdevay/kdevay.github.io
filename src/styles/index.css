@@ -7,7 +7,6 @@
   --color-body: #ffffff;
   --color-text: #000000;
   --color-background: #ffffff;
-  --color-toggle-border: #ffffff;
   --color-border: #363537;
 }
 
@@ -17,15 +16,13 @@
   --color-body: #191919;
   --color-text: #d8d8d8;
   --color-background: #191919;
-  --color-toggle-border: #6b8096;
-  --color-border: #727d8a;
+  --color-border: #d8d8d8;
 }
 
 @theme {
   --font-heading: 'Gloock', serif;
   --font-main: 'Outfit', sans-serif;
   --font-courier: 'Courier', sans-serif;
-  --color-darkGray: #363537;
   --font-weight-extraLight: 100;
   --font-size-bigV: 45px;
   --color-primary: var(--color-primary);
