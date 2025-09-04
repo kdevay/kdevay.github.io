@@ -7,7 +7,7 @@ const JobAccomplishments: React.FC<JobAccomplishmentsProps> = ({
   companyName,
 }) => {
   return (
-    <ul>
+    <ul className='text-lg'>
       {accomplishments.map((item, index) => (
         <li className='font-light' key={`${companyName}-${index}`}>
           {item}
